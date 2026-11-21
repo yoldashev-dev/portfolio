@@ -188,6 +188,7 @@ function initCommandPalette() {
   if (!backdrop || !input) return;
 
   function openPalette() {
+    backdrop.style.display = 'flex';
     backdrop.classList.add('open');
     input.value = '';
     filterItems('');
@@ -196,6 +197,7 @@ function initCommandPalette() {
 
   function closePalette() {
     backdrop.classList.remove('open');
+    backdrop.style.display = 'none';
   }
 
   function filterItems(query) {
@@ -545,19 +547,25 @@ function initCaseModals() {
           <a href="https://t.me/yoldashev_dev?text=${encodeURIComponent('Hi Yuldashbek! I reviewed your case study: ' + data.title + '. I would like to build a similar high-performance project.')}" target="_blank" class="btn btn-primary btn-sm">
             Commission Similar Project
           </a>
-          <button class="btn btn-secondary btn-sm" onclick="document.getElementById('case-modal').classList.remove('active')">
+          <button class="btn btn-secondary btn-sm" onclick="document.getElementById('case-modal').classList.remove('active'); document.getElementById('case-modal').style.display='none';">
             Close
           </button>
         </div>
       `;
 
+      backdrop.style.display = 'flex';
       backdrop.classList.add('active');
     });
   });
 
-  closeTrigger.addEventListener('click', () => backdrop.classList.remove('active'));
+  function closeModal() {
+    backdrop.classList.remove('active');
+    backdrop.style.display = 'none';
+  }
+
+  closeTrigger.addEventListener('click', closeModal);
   backdrop.addEventListener('click', (e) => {
-    if (e.target === backdrop) backdrop.classList.remove('active');
+    if (e.target === backdrop) closeModal();
   });
 }
 
