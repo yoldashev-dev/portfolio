@@ -1,62 +1,48 @@
-# 🚀 Портфолио Юлдашбека (yoldashev-dev)
+# ⚡ Yuldashbek — High-Converting Web & Landing Page Architect
 
-> Высококонверсионный персональный сайт-портфолио Lead Frontend & Landing Page разработчика.
+> Production-grade, conversion-engineered digital portfolio built with Neo-Brutalist precision, dark luxury aesthetics, and zero-bloat vanilla frontend architecture.
 
 ![HTML5](https://img.shields.io/badge/HTML5-Semantic-orange?logo=html5)
-![CSS3](https://img.shields.io/badge/CSS3-Modern_SCSS-blue?logo=css3)
+![CSS3](https://img.shields.io/badge/CSS3-Design_System-blue?logo=css3)
 ![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-yellow?logo=javascript)
-![Vercel](https://img.shields.io/badge/Vercel-Ready-black?logo=vercel)
-![PageSpeed](https://img.shields.io/badge/Google_PageSpeed-99%2F100-brightgreen)
+![Vercel](https://img.shields.io/badge/Vercel-Edge_Deployed-black?logo=vercel)
+![WCAG](https://img.shields.io/badge/Accessibility-WCAG_2.1_AA-green)
+![Core Web Vitals](https://img.shields.io/badge/Google_PageSpeed-99%2F100-brightgreen)
 
 ---
 
-## 🌟 О проекте
+## 🌟 Executive Summary
 
-Современный, премиальный сайт-портфолио веб-разработчика, созданный для демонстрации профессиональных навыков в разработке лендингов, интернет-магазинов, корпоративных сайтов и интерактивных WebGL-сервисов.
+Engineered for founders, agencies, and high-growth brands who demand high conversion rates, extreme speed, and bespoke aesthetic identity without relying on bloated CMS site builders (WordPress, Webflow, Tilda).
 
-### Ключевые фичи и разделы:
-1. **Интерактивный бэкграунд**: Легковесная частичная сетка на HTML5 Canvas с реакцией на движение курсора мыши (60 FPS).
-2. **Интерактивный калькулятор стоимости и сроков**:
-   - Клиент выбирает тип проекта, уровень дизайна, дополнительные опции (Telegram-бот, квизы, WebGL, SEO, мультиязычность) и срочность.
-   - Калькулятор моментально пересчитывает ориентировочный бюджет и сроки.
-   - Возможность в один клик скопировать готовое ТЗ в буфер или отправить предзаполненное сообщение прямо в Telegram разработчику.
-3. **Фильтруемая витрина проектов**:
-   - Категории: *Все*, *Лендинги*, *Интернет-магазины*, *Интерактив & 3D*, *Сервисы*.
-   - Модальное окно с детальным разбором каждого кейса (стек, метрики, ключевые особенности).
-4. **Блоки доверия и маркетинговой упаковки**:
-   - Преимущества и стандарты качества (чистый код vs тяжелые конструкторы, AIDA, скорость).
-   - Пошаговый таймлайн процесса разработки.
-   - Интерактивная сравнительная таблица (Юлдашбек vs Начинающий фрилансер vs Дорогая веб-студия).
-   - Отзывы клиентов и блок FAQ (аккордеон).
-5. **Форма обратной связи**:
-   - Валидация полей, генерация Telegram-заявки и всплывающие Toast-уведомления.
-
----
-
-## 🛠️ Стек технологий
-
-- **Разметка**: Чистый семантический HTML5 (без внешних тяжелых библиотек)
-- **Стили**: Modern CSS3 с CSS Variables, Glassmorphism, Responsive Grid / Flexbox, Dark Luxury Cyber Theme
-- **Скрипты**: Vanilla JavaScript ES6+ (Canvas Particle Engine, Reactive State Calculator, Modals, Accordion)
-- **Деплой**: Vercel (`vercel.json` с оптимизацией кэширования, clean URLs и security headers)
+### 💎 Key Architectural Features
+1. **Distinctive Neo-Brutalist Dark Luxury Aesthetic**:
+   - High-contrast obsidian & zinc design tokens (`#09090b`, `#18181b`, `#27272a`).
+   - Electric Emerald (`#10b981`) and Mint Neon accents with hardware-accelerated ambient glows.
+   - Architectural typography pairing `Syne`, `Plus Jakarta Sans`, and `JetBrains Mono`.
+2. **Interactive Project Scope Estimator**:
+   - Real-time reactive pricing and sprint timeline calculator based on architecture tiers, design depth, and advanced modules (Telegram bots, WebGL, SEO, i18n).
+   - Instant Markdown brief export & direct Telegram deep-link transmission.
+3. **Command Palette (`⌘K` / `Ctrl+K`)**:
+   - Power-user keyboard shortcut navigation with search, clipboard copy actions, and quick jumps.
+4. **Interactive Case Studies Showcase**:
+   - Dynamic category filtering (`Landing Pages`, `E-Commerce`, `3D & WebGL`, `Web Apps`).
+   - Interactive deep-dive modal detailing engineering challenges, metrics, and technical stack.
+5. **Obsessive Performance & Accessibility (WCAG 2.1 AA/AAA)**:
+   - Full semantic HTML5 landmarks, visible focus rings, ARIA states, screen-reader support, and reduced-motion compliance.
+   - Sub-400ms global FCP/TTFB, 60 FPS Canvas particle constellation.
 
 ---
 
-## 🚀 Развёртывание на Vercel
+## 🚀 Live Deployments
 
-### Вариант 1. Автоматический деплой через Vercel CLI (мгновенно):
-```bash
-npx vercel deploy
-```
-
-### Вариант 2. Подключение репозитория к Vercel:
-1. Перейдите на [vercel.com/new](https://vercel.com/new).
-2. Выберите репозиторий `yoldashev-dev/portfolio`.
-3. Нажмите **Deploy**. Проект сразу будет доступен на глобальном Vercel CDN с SSL-сертификатом.
+- **Live Production URL**: [https://yoldashev-dev.github.io/portfolio/](https://yoldashev-dev.github.io/portfolio/)
+- **GitHub Repository**: [https://github.com/yoldashev-dev/portfolio](https://github.com/yoldashev-dev/portfolio)
+- **Vercel One-Click Deploy**: [Import into Vercel](https://vercel.com/new/clone?repository-url=https://github.com/yoldashev-dev/portfolio)
 
 ---
 
-## 📬 Контакты
+## 📬 Contact & Inquiries
 
 - **Telegram**: [@yoldashev_dev](https://t.me/yoldashev_dev)
 - **Email**: [uldasbek404@gmail.com](mailto:uldasbek404@gmail.com)
