@@ -274,24 +274,24 @@ function initEstimator() {
   if (!form) return;
 
   const projectTiers = {
-    landing: { price: 350, days: 4, label: 'High-Converting Landing Page' },
-    corporate: { price: 650, days: 8, label: 'Corporate Brand Ecosystem' },
-    ecommerce: { price: 950, days: 12, label: 'E-Commerce Storefront & Checkout' },
-    webgl: { price: 1200, days: 14, label: 'Interactive 3D / WebGL Web App' }
+    landing: { price: 49, days: 3, label: 'High-Converting Landing Page' },
+    corporate: { price: 79, days: 5, label: 'Corporate Brand Ecosystem' },
+    ecommerce: { price: 109, days: 7, label: 'E-Commerce Storefront & Checkout' },
+    webgl: { price: 139, days: 8, label: 'Interactive 3D / WebGL Web App' }
   };
 
   const designModes = {
     bespoke: { multiplier: 1.0, label: 'Bespoke UI/UX From Scratch' },
     redesign: { multiplier: 0.85, label: 'Strategic Conversion Redesign' },
-    figma: { multiplier: 0.9, label: 'Pixel-Perfect Figma Build' }
+    figma: { multiplier: 0.8, label: 'Pixel-Perfect Figma Build' }
   };
 
   const addonFeatures = {
-    telegram_webhook: { price: 60, days: 1, label: 'Instant Telegram / CRM Webhook' },
-    quiz_calc: { price: 100, days: 1, label: 'Interactive CRO Quiz / Calculator' },
-    webgl_effects: { price: 180, days: 3, label: 'Three.js / 60 FPS Micro-Interactions' },
-    seo_cwv: { price: 80, days: 1, label: 'Technical SEO + 99+ PageSpeed Tuning' },
-    i18n: { price: 120, days: 2, label: 'Multi-Language Localization (i18n)' }
+    telegram_webhook: { price: 9, days: 0, label: 'Instant Telegram / CRM Webhook' },
+    quiz_calc: { price: 15, days: 1, label: 'Interactive CRO Quiz / Calculator' },
+    webgl_effects: { price: 19, days: 1, label: 'Three.js / 60 FPS Micro-Interactions' },
+    seo_cwv: { price: 12, days: 0, label: 'Technical SEO + 99+ PageSpeed Tuning' },
+    i18n: { price: 15, days: 1, label: 'Multi-Language Localization (i18n)' }
   };
 
   function recalculate() {
@@ -318,11 +318,12 @@ function initEstimator() {
     });
 
     if (urgency === 'express') {
-      base *= 1.25;
+      base *= 1.15;
       days = Math.max(2, Math.round(days * 0.65));
     }
 
-    const finalPrice = Math.round(base);
+    // Strict ceiling guarantee: never exceeds $227, minimum $39
+    const finalPrice = Math.min(227, Math.max(39, Math.round(base)));
 
     // Update Live UI
     const priceDisplay = document.getElementById('est-price-display');
